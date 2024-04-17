@@ -10,6 +10,7 @@
     --gradient-start-home: blue;
     --gradient-end-home: purple;
     --dark-theme-text: rgb(189, 253, 253);
+    --dark-theme-background: rgb(29, 22, 43);
     color:var(--dark-theme-text);
 }
 
@@ -26,7 +27,6 @@
 }
 
 .gradient-text {
-    font-size: 25em;
     color: transparent;
     background:  linear-gradient(to bottom, var(--gradient-start), var(--gradient-end));
     -webkit-background-clip: text;
@@ -37,7 +37,7 @@
 
 body {
     font-family: 'Crimson Text', serif;
-    background-color: rgb(29, 22, 43);
+    background-color: var(--dark-theme-background);
 }
 
 a {
@@ -59,9 +59,17 @@ a:hover {
 
 /* Nav */
 
-nav {
+.nav-container {
+    font-size: large;
     display: flex;
     align-items: center;
+    padding: 0 20px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
 }
 
 ul {

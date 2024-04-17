@@ -1,9 +1,11 @@
 import React from "react";
 import styles from "./Coding.module.css";
+import CodingNav from "./CodingNav";
 
 const Coding: React.FC = () => {
     return (
         <div className={styles.codingContainer}>
+            < CodingNav />
             <h1>Coding</h1>
             <div className={styles.scrollText}>
                     <p>

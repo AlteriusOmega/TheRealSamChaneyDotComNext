@@ -15,12 +15,12 @@ export default function RootLayout({
   
   return (
     <html lang="en">
-      <body>
+      <body className="gradient-radical">
         <RouteColorHandler />
+        <Nav />
         <div className="content">
             <div className="gradient-text" style={{ fontSize: '25em' }}>{"{"}</div>
             <main>{children}</main>
-            <Nav />
             <div className="gradient-text" style={{ fontSize: '25em' }}>{"}"}</div>
         </div>
       </body>
