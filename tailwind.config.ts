@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+// const colors = require("tailwindcss/colors");
 
 const config: Config = {
   content: [
@@ -7,13 +8,22 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-      },
+    fontFamily: {
+      serif: ["Crimson Text", "serif"],
     },
+    colors: {
+      darkPrimary: "var(--dark-primary)",
+      darkSecondary: "var(--dark-secondary)",
+      darkTextPrimary: "var(--dark-text-primary)",
+      darkTextSecondary: "var(--dark-text-secondary)",
+      darkBackgroundPrimary: "var(--dark-background-primary)",
+      darkBackgroundSecondary: "var(--dark-background-secondary)"
+    },
+    extend: {
+      fontSize: {
+        gradientDivider: "2rem",
+      },
+    }
   },
   plugins: [],
 };

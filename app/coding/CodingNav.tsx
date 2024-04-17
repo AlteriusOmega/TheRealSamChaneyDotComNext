@@ -4,7 +4,7 @@ import Link from "next/link";
 const CodingNav: React.FC = () => {
     return (
         <nav className="nav-container">
-            <div className="gradient-text" style={{fontSize:"10em"}}>{"𝄕"}</div>    
+            <div className="gradient-text" style={{fontSize:"10rem"}}>{"𝄕"}</div>    
             <ul>
                 <li>
                     <Link href="/coding/geometry-generator">Geometry Generator</Link>
@@ -16,7 +16,7 @@ const CodingNav: React.FC = () => {
                     <Link href="/coding/beat-cube">Beat Cube</Link>
                 </li>
             </ul>
-            <div className="gradient-text" style={{fontSize:"10em", transform: "scaleX(-1)"}}>{"𝄕"}</div>    
+            <div className="gradient-text" style={{fontSize:"10rem", transform: "scaleX(-1)"}}>{"𝄕"}</div>    
 
         </nav>
     );
