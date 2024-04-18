@@ -7,9 +7,9 @@ interface CodingLayoutProps {
 
 const CodingLayout = ({ children }: CodingLayoutProps) => {
   return (
-    <div>
+    <div className="flex">
       <CodingNav />
-      {children}
+      <div className="overflow-auto max-h-[600px]">{children}</div>
     </div>
   )
 }

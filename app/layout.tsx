@@ -20,7 +20,7 @@ export default function RootLayout({
         <Nav />
         <div className="flex items-center">
           <div className="gradient-text text-[25rem] m-[-30px] ml-[-70px] mt-[-210px]">{"{"}</div>
-          <main>{children}</main>
+          <main className="w-full">{children}</main>
           <div className="gradient-text text-[25rem] m-[-40px] mr-[-60px] mt-[-210px]">{"}"}</div>
         </div>
       </body>

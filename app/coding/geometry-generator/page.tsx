@@ -4,8 +4,9 @@ import CodingLayout from '../CodingLayout'
 const GeometryGenerator = () => {
   return (
     <div>
-      < CodingLayout />
-      <h1>Geometry Generator</h1>    
+      < CodingLayout>
+        <h1>Geometry Generator</h1>    
+      </CodingLayout>
     </div>
 )
 }
