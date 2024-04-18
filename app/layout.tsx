@@ -18,7 +18,8 @@ export default function RootLayout({
       <body>
         <RouteColorHandler />
         <Nav />
-        <div className="flex items-center">
+        {/* Need to hide overflow due to brackets going outside page bounds */}
+        <div className="flex items-center overflow-hidden">
           <div className="gradient-text text-[25rem] m-[-30px] ml-[-70px] mt-[-210px]">{"{"}</div>
           <main className="w-full">{children}</main>
           <div className="gradient-text text-[25rem] m-[-40px] mr-[-60px] mt-[-210px]">{"}"}</div>

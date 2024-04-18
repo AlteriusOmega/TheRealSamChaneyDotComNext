@@ -1,14 +1,15 @@
 import React from 'react'
 import CodingLayout from '../CodingLayout'
 
-const GeometryGenerator = () => {
+const ThisSite = () => {
   return (
     <div>
       <CodingLayout>
-        <h1>Geometry Generator</h1>    
+        <h1>ThisSite</h1>
+        <p>This website is made using Next.js and Tailwind CSS</p>
       </CodingLayout>
     </div>
-)
+  )
 }
 
-export default GeometryGenerator
+export default ThisSite

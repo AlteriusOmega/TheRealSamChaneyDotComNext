@@ -4,8 +4,8 @@ import CodingLayout from "./CodingLayout";
 
 const Coding: React.FC = () => {
   return (
-    <div className={styles.codingContainer}>
-      < CodingLayout>
+    <div >
+      <CodingLayout>
         <h1>Coding</h1>
           <p>
               For the past decade or so, I've been professionally developing reliable, maintainable, and readable code for many different companies and clients. My passion is for finding elegant and efficient solutions for complicated problems, and for learning new tools and applying them to tackle new obstacles. My projects range from web applications running on embedded hardware, to highway toll system health monitors to Android apps and more, and utilizing a broad range of languages like C#, Python, C++, JavaScript and Java.
