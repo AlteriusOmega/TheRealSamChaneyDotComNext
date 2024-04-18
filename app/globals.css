@@ -53,10 +53,10 @@ a {
     @apply transition-colors duration-500 ease-in-out hover:text-darkTextPrimary;
 }
 
-.content {
+/* .content {
     display: flex;
     align-items: center;
     margin-top: 0;
-}
+} */
 
 @tailwind utilities;

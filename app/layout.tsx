@@ -18,10 +18,10 @@ export default function RootLayout({
       <body>
         <RouteColorHandler />
         <Nav />
-        <div className="content">
-            <div className="gradient-text" style={{ fontSize: '25rem' }}>{"{"}</div>
-            <main>{children}</main>
-            <div className="gradient-text" style={{ fontSize: '25rem' }}>{"}"}</div>
+        <div className="flex items-center">
+          <div className="gradient-text text-[25rem] m-[-30px] ml-[-70px] mt-[-210px]">{"{"}</div>
+          <main>{children}</main>
+          <div className="gradient-text text-[25rem] m-[-40px] mr-[-60px] mt-[-210px]">{"}"}</div>
         </div>
       </body>
     </html>
