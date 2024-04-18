@@ -5,6 +5,7 @@ const Nav: React.FC = () => {
   return (
     <nav className="flex items-center justify-between p-2">
       <div></div>
+      {/* <img src="/sam_chaney_logo.svg" className="gradient-text h-20 mr-[-20px]"/> */}
       <Link href="/" className="text-darkTextPrimary text-xl text hover:text-darkTextSecondary">Sam Chaney</Link>
       <div className="gradient-text">𝄆</div>    
       <Link href="/">Home</Link> 

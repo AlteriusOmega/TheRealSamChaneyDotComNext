@@ -22,6 +22,7 @@ export default function RootLayout({
         <div className="flex items-center overflow-hidden">
           <div className="gradient-text text-[25rem] m-[-30px] ml-[-70px] mt-[-210px]">{"{"}</div>
           <main className="w-full">{children}</main>
+            <img src="/sam_chaney_logo.svg" className="gradient-text absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-[800px] z-[-1]" />
           <div className="gradient-text text-[25rem] m-[-40px] mr-[-60px] mt-[-210px]">{"}"}</div>
         </div>
       </body>
