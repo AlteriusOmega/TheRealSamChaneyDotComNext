@@ -21,7 +21,7 @@ const config: Config = {
     },
     extend: {
       fontSize: {
-        gradientDivider: "2rem",
+        gradientDivider: "2.5rem",
       },
     }
   },

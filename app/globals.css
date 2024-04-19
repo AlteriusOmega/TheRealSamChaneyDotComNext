@@ -29,6 +29,8 @@
 }
 
 .gradient-text {
+    /* clip-path: inset(100px); */
+    /* left: 0px; */
     @apply text-gradientDivider;
     color: transparent;
     background:  linear-gradient(to bottom, var(--gradient-start), var(--gradient-end));
@@ -36,6 +38,24 @@
     background-clip: text;
     transition-property: --gradient-start, --gradient-end;
     transition-duration: 2s;
+}
+
+
+/* fram-brace and left and right make the { and } brace divs tight around the chars */
+.frame-brace {
+    font-size: 25rem;
+    height: 614px;
+    line-height: 485px;
+}
+
+.frame-brace.left {
+    letter-spacing: -45px;
+    text-indent: -92px;
+}
+
+.frame-brace.right {
+    letter-spacing: -79px;
+    text-indent: -56px; 
 }
 
 html {
