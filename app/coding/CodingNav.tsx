@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const CodingNav: React.FC = () => {
   return (
-    <div className="flex items-center sticky">
+    <div className="flex items-center sticky top-[24.5vh]">
       <div className="gradient-text text-[10rem] ml-[-40px] mr-[-30px] mb-[-20px]">𝄕</div>    
       <div className="flex flex-col items-center">
         <h1 className="text-l">Projects:</h1>
@@ -13,7 +13,7 @@ const CodingNav: React.FC = () => {
         <Link href="/coding/beat-cube">BeatCube</Link>
         </div>
       <div className="gradient-text text-[10rem] scale-x-[-1] ml-[-30px] mb-[-20px] mr-5">𝄕</div>
-    </div>
+      </div>
   );
 };
 

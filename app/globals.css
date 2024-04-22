@@ -41,7 +41,7 @@
 }
 
 
-/* fram-brace and left and right make the { and } brace divs tight around the chars */
+/* frame-brace and left and right make the { and } brace divs tight around the chars */
 .frame-brace {
     font-size: 25rem;
     height: 614px;
