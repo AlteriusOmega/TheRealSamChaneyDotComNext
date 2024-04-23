@@ -8,7 +8,7 @@ const Nav: React.FC = () => {
       {/* <img src="/sam_chaney_logo.svg" className="gradient-text h-20 mr-[-20px]"/> */}
       <div className="flex items-center">
         <div className="gradient-text text-6xl font-bold">{"𝄕"}</div>
-        <Link href="/" className="text-darkTextPrimary text-2xl px-3 hover:text-darkTextSecondary">Sam Chaney</Link>
+        <Link href="/" className="text-darkTextPrimary text-2xl px-3 mb-2 hover:text-darkTextSecondary">Sam Chaney</Link>
         <div className="gradient-text scale-x-[-1] text-6xl font-bold">{"𝄕"}</div>
       </div>
       <div className="gradient-text">𝄆</div>    

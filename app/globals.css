@@ -66,6 +66,7 @@ html {
 
 body {
     @apply text-darkTextPrimary bg-darkBackgroundPrimary;
+    min-height: 1000px;
 }
 
 a {
