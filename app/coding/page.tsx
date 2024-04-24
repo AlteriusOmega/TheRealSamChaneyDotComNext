@@ -4,7 +4,7 @@ import CodingLayout from "./CodingLayout";
 
 const Coding: React.FC = () => {
   return (
-    <div >
+    <div>
       <CodingLayout>
         <h1>Coding</h1>
           <p>

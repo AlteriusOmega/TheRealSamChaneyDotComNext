@@ -7,7 +7,7 @@ interface CodingLayoutProps {
 
 const CodingLayout = ({ children }: CodingLayoutProps) => {
   return (
-    <div className="flex">
+    <div className="flex min-h-[85vh]">
       <div>
         <CodingNav />
       </div>
