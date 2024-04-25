@@ -9,7 +9,8 @@ const config: Config = {
   ],
   theme: {
     fontFamily: {
-      serif: ["Crimson Text", "serif"],
+      serifCrimson: ["var(--font-crimson-text)", "sans-serif"],
+      gradientFont: ["Times New Roman", "serif"],
     },
     extend: {
       colors: {

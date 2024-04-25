@@ -16,6 +16,7 @@
     --dark-text-secondary: rgb(119, 134, 250);
     --dark-background-primary: rgb(29, 22, 43);
     --dark-background-secondary: rgb(7, 58, 81);
+    --gradient-brace-size: 24rem;
 }
 
 @property --gradient-start {
@@ -32,6 +33,7 @@
 
 .gradient-text {
     @apply text-gradientDivider;
+    @apply font-gradientFont;
     color: transparent;
     background: linear-gradient(to bottom, var(--gradient-start), var(--gradient-end));
     -webkit-background-clip: text;
@@ -45,26 +47,35 @@ linearGradient stop {
     transition: stop-color 2s;
 }
 
-/* frame-brace and left and right make the { and } brace divs tight around the chars */
+/* frame-brace and left and right make the { and } brace divs tight around the chars */ 
+/* This way we can control spacing around them intentionally */
+/* Times New Roman */
 .frame-brace {
-    font-size: 25rem;
-    height: 614px;
-    line-height: 485px;
+    font-size: var(--gradient-brace-size);
+    height: calc(var(--gradient-brace-size)*0.925);
+    line-height: calc(var(--gradient-brace-size)*0.73);
 }
 
+/* Crimson Text */
+/* .frame-brace {
+    font-size: var(--gradient-brace-size);
+    height: calc(var(--gradient-brace-size)*.87);
+    line-height: calc(var(--gradient-brace-size)*0.86);
+} */
+
 .frame-brace.left {
-    letter-spacing: -45px;
-    text-indent: -92px;
+    letter-spacing: calc(var(--gradient-brace-size)*0.068*-1);
+    text-indent: calc(var(--gradient-brace-size)*0.14*-1);
 }
 
 .frame-brace.right {
-    letter-spacing: -79px;
-    text-indent: -56px; 
+    letter-spacing: calc(var(--gradient-brace-size)*0.119*-1);
+    text-indent: calc(var(--gradient-brace-size)*0.08437*-1); 
 }
 
 html {
     /* Font defined in tailwind.config.ts */
-    @apply font-serif;
+    @apply font-serifCrimson;
     @apply text-[16pt] sm:text-[20pt];
 }
 
