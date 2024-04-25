@@ -18,7 +18,7 @@ export default function RootLayout({
       <body className="">
         <RouteColorHandler />
         <Nav />
-        <div className="flex scrollbar-hide min-h-[85vh]">
+        <div className="flex scrollbar-hide min-h-[77vh]">
           <div className="gradient-text frame-brace left hidden lg:block sticky pl-2 top-[30lvh]">{"{"}</div>
           <main className="w-full p-6 scrollbar-hide">{children}</main>
           <div id="logo" className="">
