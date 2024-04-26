@@ -31,7 +31,7 @@ export default function RootLayout({
             <main className="w-full p-6 scrollbar-hide">{children}</main>
             <div id="logo" className="z-[-1]">
               {/* SVG width to height ratio should be 0.73 */}
-              <div className="logo-mask w-[584px] h-[800px] opacity-15 fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 mt-6"></div>
+              <div className="logo-mask w-[44vh] h-[60vh] sm:w-[58vh] sm:h-[80vh] opacity-15 fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 mt-6"></div>
             </div>
             <div className="gradient-text frame-brace right hidden lg:block sticky pr-2 top-[30vh]">{"}"}</div>
             </div>
