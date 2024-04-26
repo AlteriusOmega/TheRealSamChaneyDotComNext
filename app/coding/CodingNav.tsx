@@ -13,7 +13,7 @@ const CodingNav: React.FC = () => {
         <Link href="/coding/bebop">Bebop.js</Link>
         <Link href="/coding/beat-cube">BeatCube</Link>
         </div>
-      <div className="gradient-text text-[10rem] scale-x-[-1] ml-[-30px] mr-5">𝄕</div>
+      <div className="gradient-text text-[10rem] scale-x-[-1] ml-[-30px] mr-3">𝄕</div>
       </div>
   );
 };
