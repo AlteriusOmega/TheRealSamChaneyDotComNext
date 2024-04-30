@@ -32,8 +32,7 @@
 }
 
 .gradient-text {
-    @apply text-gradientDivider;
-    @apply font-gradientFont;
+    @apply text-gradientDivider font-gradientFont z-[-1];
     color: transparent;
     background: linear-gradient(to bottom, var(--gradient-start), var(--gradient-end));
     -webkit-background-clip: text;
