@@ -1,7 +1,5 @@
 from geometry_generator import *
-import js
 import svgwrite
-from js import resizeSVG
 
 print(f"geometry_interface.py ran!")
 

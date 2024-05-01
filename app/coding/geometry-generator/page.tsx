@@ -31,33 +31,28 @@ const GeometryGenerator = () => {
 
   return (
     <div>
-      {/* <script defer src="https://pyscript.net/releases/2023.03.1/pyscript.js"></script> */}
-      {/* <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script> */}
-      {/* <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" /> */}
-      {/* <py-script src="../geometry_interface.py"></py-script> */}
-      {/* <py-config src="../pyscript_config.toml"></py-config> */}
-      
-
       <CodingLayout>
         <h1>Geometry Generator</h1>
         <p>
           I created Geometry Generator because I have always been enamored with the beauty of geometric patterns like in art such as M.C. Escher, like those found on mosques, and like those found in nature like on diatoms. In junior high, geometry class was what initially got me to fall in love with mathematics and science because the visual aspect of it allowed me to connect to the material more deeply. Geometry can act as a sort of bridge
         </p>
-        {/* <py-config src="/pyscript_config.toml"></py-config>
-        <py-script src="/geometry_interface.py"></py-script>
-        <py-config src="/test.py"></py-config> */}
 
-        <PyScriptProvider >
+        {/* <script defer src="https://pyscript.net/releases/2023.03.1/pyscript.js"></script> */}
+        <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+        {/* <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" /> */}
+        {/* <py-script src="../geometry_interface.py"></py-script> */}
+        {/* <py-config src="../pyscript_config.toml"></py-config> */}
+        <py-config src="/pyscript_config.toml"></py-config>
+        <py-script src="/geometry_interface.py"></py-script>
+
+        {/* <PyScriptProvider >
           <PyConfig
-            source="/pyscript_config_simple.toml"
+            source="/pyscript_config.toml"
           />
-          {/* <PyScript
-            source="/geometry_interface.py"
-          /> */}
           <PyScript
-            source="/geometry_combined.py"
+            source="/geometry_interface.py"
           />
-        </PyScriptProvider>
+        </PyScriptProvider> */}
         <div id="button-cintainer">
           <div id="svg-output"></div>
           <button id="clear-drawing" py-click="clear_drawing()">Clear Drawing</button>

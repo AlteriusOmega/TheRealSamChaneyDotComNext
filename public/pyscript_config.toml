@@ -1,4 +1,4 @@
 packages = ["svgwrite"]
 
-[[fetch]]
-files = ["../geometry_generator.py"]
+[files]
+"../geometry_generator.py" = "geometry_generator.py"
