@@ -1,4 +1,4 @@
 packages = ["svgwrite"]
 
 [files]
-"../geometry_generator.py" = "geometry_generator.py"
+"../geometry_generator.py" = "./geometry_generator.py"

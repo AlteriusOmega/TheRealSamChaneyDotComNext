@@ -1,9 +1,11 @@
 from geometry_generator import *
 import svgwrite
+# from pyweb import pydom
+from pyscript import document
 
 print(f"geometry_interface.py ran!")
 
-interface_element = Element("interface")
+interface_element = document.getElementById("interface")
 
 svg_output_width = 500
 diameter = svg_output_width / 2
@@ -11,11 +13,11 @@ diameter = svg_output_width / 2
 center = [svg_output_width*0.5, svg_output_width*0.5]
 print(f"center is {center}")
 
-svg_output = Element("svg-output")
+svg_output = document.getElementById("svg-output")
 
 # Note, drawing_global is global variable from geometry_generator.py itself 
 
-repl = Element("py-repl")
+repl = document.getElementById("py-repl")
 
 def render_drawing_html():
     print(f"render_drawing_html ran!")
@@ -25,6 +27,7 @@ def render_drawing_html():
     svg_output.element.innerHTML = svg_string
 
 def clear_drawing():
+    print("clear_drawing ran!")
     global drawing_global
     print(f"clear_drawing ran! and drawing is {drawing_global} and drawing xml is {drawing_global.get_xml()}")
     drawing_global = svgwrite.Drawing(output_path)
